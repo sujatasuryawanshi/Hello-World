@@ -24,6 +24,7 @@ if(!is.null(inv)){
 message("getting cache data")
 return(inv)
 }
+  
 mat <- x$get()
 inv <- solve(mat, ...)
 x$setInverse(inv)
